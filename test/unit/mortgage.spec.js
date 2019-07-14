@@ -12,8 +12,8 @@ describe('Mortgage Calculator', () => {
         expect(mortgage.monthlyPayment).to.exist;
     });
 
-    it('should have function monthlyPayment return a number', () => {
-        expect(mortgage.monthlyPayment()).to.be.a('number');
+    it('should have function monthlyPayment ', () => {
+        expect(mortgage.monthlyPayment()).to.not.equal('0');
       });
 
     it('should cnot be coercable into false', () => {
